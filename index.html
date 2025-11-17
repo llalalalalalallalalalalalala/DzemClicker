@@ -88,7 +88,7 @@
   <button id="playButton">Play</button>
   <script>
     const title=document.getElementById('title');
-    const titles=['Dżem Clicker','Jam Clicker','Marmeladen Clicker'];
+    const titles=['Dżem Clicker','Jam Clicker','Marmeladen-Clicker'];
     let i=0;
     setInterval(()=>{
       i=(i+1)%titles.length;
@@ -100,7 +100,7 @@
     const playBtn=document.getElementById('playButton');
 
     const playTexts={pl:'Graj',en:'Play',de:'Spielen'};
-    const langLinks={pl:'pl/pl.html',en:'en/en.html',de:'/de'}; // <- tu wpisujesz linki do wersji językowych
+    const langLinks={pl:'pl/pl.html',en:'en/en.html',de:'de/de.html'}; // <- tu wpisujesz linki do wersji językowych
 
     buttons.forEach(btn=>{
       btn.addEventListener('click',()=>{
