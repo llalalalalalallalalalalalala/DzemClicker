@@ -75,8 +75,6 @@
   }
 </style>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5386268317368269"
-     crossorigin="anonymous"></script>
 </head>
 <body>
   <h1 id="title">Dżem Clicker</h1>
@@ -93,11 +91,19 @@
       <svg class="flag" viewBox="0 0 60 36" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><rect width="60" height="12" fill="#000"/><rect width="60" height="12" y="12" fill="#DD0000"/><rect width="60" height="12" y="24" fill="#FFCE00"/></svg>
       <span class="label">DE</span>
     </button>
+    <button class="lang-btn" data-lang="es" title="Español (ES)">
+  <img class="flag"
+       src="https://flagcdn.com/es.svg"
+       alt="ES">
+  <span class="label">ES</span>
+</button>
+
+
   </div>
   <button id="playButton">Play</button>
   <script>
     const title=document.getElementById('title');
-    const titles=['Dżem Clicker','Jam Clicker','Marmeladen-Clicker'];
+    const titles=['Dżem Clicker','Jam Clicker','Marmeladen-Clicker','Clicker de Marmelada'];
     let i=0;
     setInterval(()=>{
       i=(i+1)%titles.length;
@@ -108,8 +114,8 @@
     const buttons=document.querySelectorAll('.lang-btn');
     const playBtn=document.getElementById('playButton');
 
-    const playTexts={pl:'Graj',en:'Play',de:'Spielen'};
-    const langLinks={pl:'pl/pl.html',en:'en/en.html',de:'de/de.html'}; // <- tu wpisujesz linki do wersji językowych
+    const playTexts={pl:'Graj',en:'Play',de:'Spielen',es:'Jugar'};
+    const langLinks={pl:'http://adfoc.us/875950113477756',en:'http://adfoc.us/875950113478139',de:'http://adfoc.us/875950113478140',es:'http://adfoc.us/875950113478142'}; // <- tu wpisujesz linki do wersji językowych
 
     buttons.forEach(btn=>{
       btn.addEventListener('click',()=>{
@@ -128,5 +134,6 @@
   </script>
   <h6><a href="changelog.htm">Changelog</a></h6>
   <h6><a href="ose.htm">Informacja dla OSE</a></h6>
+  <h6><a href="ads.htm">Ad info</a></h6>
 </body>
 </html>
