@@ -1,0 +1,18 @@
+name: HTTP Every Minute (6-22)
+
+on:
+  schedule:
+    - cron: "* 6-21 * * *"
+    - cron: "0 22 * * *"
+  workflow_dispatch:
+
+jobs:
+  request:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send HTTP request
+        run: |
+          curl -X POST "https://drzewko.onrender.com" \
+          -H "Content-Type: application/json" \
+          -d '{"source": "github-actions"}'
